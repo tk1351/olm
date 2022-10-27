@@ -11,6 +11,8 @@ datasource db {
 }
 
 model Movie {
-  id     Int  @default(autoincrement()) @id
-  title  String
+  id        String @id @default(uuid())
+  title     String
+  imageSrc  String
+  year      String
 }
